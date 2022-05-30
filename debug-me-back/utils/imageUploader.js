@@ -12,7 +12,7 @@ const storage = multer.diskStorage({
 
 const limits = { fileSize: 1000 }
 
-const fileFilter = (req, file, cb) {
+const fileFilter = (req, file, cb) => {
     // Accept image file types only
     console.log(file)
     if (!file.fieldname.match(/\.(jpg|JPG|jpeg|JPEG|png|PNG|gif|GIF)$/)) {

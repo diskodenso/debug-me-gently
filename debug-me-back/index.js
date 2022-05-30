@@ -1,5 +1,5 @@
 const express = require('express');
-const upload = require('utils/imageUploader')
+const upload = require('./utils/imageUploader.js')
 
 const app = express;
 const port = Math.floor(Math.random() * 65535)
